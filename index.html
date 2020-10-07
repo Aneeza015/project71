@@ -1,12 +1,604 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Heroku Static HTML/CSS Deployment Example </h1>
-    <p>hello</p>
-</body>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://kit.fontawesome.com/3494ac7d0a.js" crossorigin="anonymous"></script>
+
+    <style>
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#div1 {
+
+  position: relative;
+  animation: mymove 2s ;
+  
+}
+
+
+#div1 {animation-timing-function: ease-in;}
+
+
+
+@keyframes mymove {
+  from {left: -50px;}
+  to {left: 10px;}
+}
+
+h2{
+
+
+  margin: 5px;
+  text-align: center;
+  font-family: Petit Formal Script;
+  font-size: 50px;
+  
+  
+
+}
+
+#div3 {
+
+
+  background-image: url(cafe.png );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-left: 05px;
+  color: aliceblue; 
+  
+
+}
+
+#div4 {
+
+
+  background-image: url(laugh.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; ;
+  padding-left: 0px;
+  color: rgb(255, 255, 255);
+  
+
+}
+
+
+#div5 {
+
+ background-image: url(peach.png);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover ;
+
+}
+
+#div6 {
+
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+
+
+}
+
+#div9 {
+
+  background-image: url(news.png);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+}
+
+
+
+
+</style>
+    
+  </head>
+  <body >
+
+
+
+
+<header>
+    <div class="alert alert-danger alert-dismissible fade show " role="alert">
+        <strong>Stay Safe!</strong> In light of the COVID-19 situation, we are taking important measures to protect the health and safety of our guests and team members.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     
+   
+        
+   
+    
+
+
+  </header> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white"  >
+    <a class="navbar-brand pl-5" href="#"  style="font-size:50px; font-family: 'Tangerine', serif ; text-shadow: 4px 4px 4px #aaa; width: 100px ; " > <strong> F.R.I.E.N.D.S</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link pr-5" href="https://heroku-kanza.herokuapp.com/#Kanza"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-5" href="#m" ><strong> Menu</strong></a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link pr-5" href="#ab"><strong>About Us</strong></a>
+          </li>
+          <li class="nav-item">
+          
+            <a class="nav-link pr-5" href="#r"><strong>Reservation </strong></a>
+        
+          </li>
+         
+        <li class="nav-item">
+            <a class="nav-link pr-5" href="#c" > <strong>Contact</strong> </a>
+          </li>
+         
+         
+
+       
+      </ul>
+    </div>
+  </nav>   
+      
+
+
+
+      
+      <div  id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="background-size: cover;">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            
+
+
+
+            <img src="num2.png" class="d-block w-100" alt="..." height="550">
+        </div>
+    <div class="carousel-item ">
+        <img src="num4.png" class="d-block w-100" alt="..." height="550" >
+    </div>
+    <div class="carousel-item">
+      <img src="num5.png" class="d-block w-100" alt="..." height="550">
+    </div>
+    <div class="carousel-item">
+      <img src="num7.png" class="d-block w-100" alt="..." height="550">
+    </div>
+    <div class="carousel-item">
+      <img src="num9.png" class="d-block w-100" alt="..." height="550">
+    </div>
+    <div class="carousel-item">
+      <img src="num6.png" class="d-block w-100" alt="..." height="550">
+    </div>
+ </div>
+ <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+ </a>
+<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+
+           
+<div class="row" >
+  <div class="col pl-4 my-5 pr-0 ">
+    <div class="vc_empty_space">
+      <span class="vc_empty_space_inner"></span>
+      <div class="" style="height: 80px"></div>
+        </div>
+
+                <h1 id= "ab" style="text-align:center;font-family:Petit Formal Script;font-size: 35px;"  > <strong><b>About FRIENDS</b></strong> </h1>
+               
+                <div class="vc_empty_space">
+                  <span class="vc_empty_space_inner"></span>
+                  <div class="" style="height: 20px"></div>
+                    </div>
+                   
+                <p style="text-align:center; font-family:Petit Formal Script;"> <strong>At FRIENDS we pride ourselves on delivering inspirational cuisine with a promise that every morsel that hits your mouth will be prepared with utmost care regarding taste and hygiene. </strong> </p>
+              <p style="text-align:center;font-family:Petit Formal Script; "> <strong>Our style is open, relaxed and friendly. Come down for a coffee with the morning paper, a cocktail and small plates in the evening and anything in between! </strong></p>
+             <button style="margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:5%" type="button" class="btn btn-outline-dark">About Us</button> 
+             
+            </div>
+              <div class="col  pl-10 pr-2 my-5 "  >
+               
+               <img id="div1" role="presentation"  src="cafef.png" alt="Orange Couch" width="350" height="500" class="mx-auto d-block">
+              </div>
+</div>
+            
+
+           
+<div class="container">
+  <div id="div4"  class="row pl-0">
+    <div class="col pl-4 ">
+
+        
+<div class="vc_empty_space">
+<span class="vc_empty_space_inner"></span>
+<div class="" style="height: 100px"></div>
+</div>
+
+<h2 > <strong>Count memories not calories</strong>  <br>
+
+</h2>
+
+<div class="vc_empty_space">
+  <span class="vc_empty_space_inner"></span>
+  <div class="" style="height: 100px"></div>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="row" >
+  <div class="col pl-4 my-5 pr-0 ">
+    <div class="vc_empty_space">
+      <span class="vc_empty_space_inner"></span>
+      <div class="" style="height: 80px"></div>
+        </div>
+
+        <img   src="event.png" alt="Orange Couch" width="350" height="500" class="mx-auto d-block">
+
+
+    
+</div>
+  <div class="col  pl-0 pr-8 my-5 "  >
+
+
+
+    <div class="vc_empty_space">
+      <span class="vc_empty_space_inner"></span>
+      <div class="" style="height: 150px"></div>
+        </div>
+   
+    <h1 style="text-align:center;font-family:Petit Formal Script;font-size: 35px;"> <strong><b>Birthdays & Events</b></strong> </h1>
+   
+    
+    <div class="vc_empty_space">
+      <span class="vc_empty_space_inner"></span>
+      <div class="" style="height: 20px"></div>
+        </div>
+       
+    <p style="text-align:center; font-family:Petit Formal Script;"> <strong> Make your moments special by arranging your birthdays <br> and different events with us!    </strong></p>
+  
+ <button style="margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:5%" type="button" class="btn btn-outline-dark">Contact Us</button> 
+ 
+   
+  </div>
+</div>
+
+
+
+
+
+
+              <div class="container">
+                <div id="div3"  class="row pl-0">
+                  <div class="col pl-4 ">
+
+                      
+          <div class="vc_empty_space">
+            <span class="vc_empty_space_inner"></span>
+            <div class="" style="height: 100px"></div>
+              </div>
+
+              <h2 > <strong>Locally sourced, fresh ingredients</strong>  <br>
+
+              </h2>
+
+              <div class="vc_empty_space">
+                <span class="vc_empty_space_inner"></span>
+                <div class="" style="height: 100px"></div>
+                  </div>
+    
+
+                  </div>
+                </div>
+              </div>
+              
+            
+
+              <div class="row" >
+                <div class="col pl-4 my-5 pr-0 ">
+                  <div class="vc_empty_space">
+                    <span class="vc_empty_space_inner"></span>
+                    <div class="" style="height: 80px"></div>
+                      </div>
+             
+                  <h1 id="r" style="text-align:center;font-family:Petit Formal Script;font-size: 35px;"> <strong><b> Reservation  </b></strong> </h1>
+                 
+                  <div class="vc_empty_space">
+                    <span class="vc_empty_space_inner"></span>
+                    <div class="" style="height: 20px"></div>
+                      </div>
+                     
+                  <p style="text-align:center; font-family:Petit Formal Script;"> <strong> Book your table now to experience the best fine dine <br> restaurant in town.</strong></p>
+                
+               <button style="margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:5%" type="button" class="btn btn-outline-dark">Book Now</button> 
+               
+              </div>
+                <div class="col  pl-10 pr-2 my-5 "  >
+                 
+                 <img   src="reserve1.png" alt="Orange Couch" width="350" height="500" class="mx-auto d-block">
+                </div>
+              </div>  
+          
+
+
+              <div class="container">
+                <div id="div5"  class="row pl-0">
+                  <div class="col pl-4 ">
+
+                      
+          <div class="vc_empty_space">
+            <span class="vc_empty_space_inner"></span>
+            <div class="" style="height: 30px"></div>
+              </div>
+
+              <h2 id="m" > <strong>Menu</strong>  <br>
+
+              </h2>
+
+              <div class="vc_empty_space">
+                <span class="vc_empty_space_inner"></span>
+                <div class="" style="height: 30px"></div>
+                  </div>
+    
+
+                  </div>
+                </div>
+              </div>
+
+
+          <div  class="row pl-4 my-5" style="background-position:10px  "  >
+            <div  class="col pl-2 h-50 d-inline-block">
+              <a href="Menu.html">
+                <img id="div1" alt="Qries" src="bar_1.png"
+                width="350" height="500">
+             </a>
+            </div>
+            <div  class="col pl-2 ">
+              <a  href="Menu.html">
+                <img id="div1" alt="Qries" src="images (9)_1.jpeg"
+                width="290" height="250"> </a>
+                <br>
+                <div class="vc_empty_space"  >
+                  <span class="vc_empty_space_inner"></span>
+                  <div class="" style="height: 10px"></div>
+                    </div>
+                <a  href="Menu.html">
+                  <img id="div1" alt="Qries" src="images (7)_1.jpeg"
+                  width="290" height="240"> </a>
+            </div>
+            
+            <div class="col"  >
+              <a  href="Menu.html">
+                <img id="div1" alt="Qries" src="images (10)_1.jpeg"
+                width="300" height="210"> </a>
+                <br>
+                <div class="vc_empty_space">
+                  <span class="vc_empty_space_inner"></span>
+                  <div class="" style="height: 10px"></div>
+                    </div>
+                <a  href="Menu.html">
+                  <img id="div1" alt="Qries" src="images (2)_1.jpeg"
+                  width="300" height="280"> </a>
+            </div>
+            <div  class="col pr-4 ">
+              <a  href="Menu.html">
+                <img id="div1" alt="Qries" src="images (6)_1.jpeg"
+                width="300" height="500"> </a>
+            </div>
+          
+</div>
+
+
+
+
+<div class="container">
+  <div id="div5"  class="row pl-0">
+    <div class="col pl-4 ">
+
+        
+<div class="vc_empty_space">
+<span class="vc_empty_space_inner"></span>
+<div class="" style="height: 30px"></div>
+</div>
+
+<h2 id="c" > <strong>Contact Us</strong>  <br>
+
+</h2>
+
+<div class="vc_empty_space">
+  <span class="vc_empty_space_inner"></span>
+  <div class="" style="height: 30px"></div>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="vc_empty_space">
+  <span class="vc_empty_space_inner"></span>
+  <div class="" style="height: 30px"></div>
+    </div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4" style="background-color: blanchedalmond;" >
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Friends</h6>
+        <p>At FRIENDS we pride ourselves on delivering inspirational cuisine with a promise that every morsel that hits your mouth will be prepared with utmost care regarding taste and hygiene.</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Opening Timing</h6>
+        <p>
+          Monday - Friday <br> 9:00am - 9:00pm
+        </p>
+        <p>
+          Saturday <br> 9:00am - 6:00pm
+        </p>
+        <p>
+          Sunday <br> CLOSED
+        </p>
+       
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Customer Service</h6>
+        
+        <p>
+          <a href="#!">Feedback</a>
+        </p>
+        <p>
+          <a href="#!">Complaints</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i>MM Alam Road, Lahore </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> Sp18-bse-071@example.com </p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 900 786 01</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/">
+            <strong> friendsC&R.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
