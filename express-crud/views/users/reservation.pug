@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+  h1 Reserve your Table Now
+  form(action="/reservation",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="email") Timing
+            input#email(type="text", class="form-control", name="timing")
+        .form-group
+            label(for="name") Event
+            input#price(type="text", class="form-control", name="event")
+        .form-group
+            label(for="name") Members
+            input#price(type="text", class="form-control", name="members")
+        .form-group
+            label(for="password") Phone Number
+            input#price(type="password", class="form-control", name="password")
+        input(type="submit", class="btn btn-info" value="Submit")

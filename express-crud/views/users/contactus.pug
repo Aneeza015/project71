@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  h1 ContactUs
+  form(action="/contactus",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="email") Email
+            input#email(type="text", class="form-control", name="email")
+        .form-group
+            label(for="name") Event
+            input#price(type="text", class="form-control", name="event")
+        .form-group
+            label(for="password") Phone Number
+            input#price(type="password", class="form-control", name="password")
+        input(type="submit", class="btn btn-info" value="Submit")
